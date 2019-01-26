@@ -1,53 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DesignPatterns.Original {
-    class Color {
-        // slovnik pro kontrolu existence instance se stejnymi parametry
-        private readonly static Dictionary<int, Color> cache
-            = new Dictionary<int, Color>();
-        private readonly int r;
-        private readonly int g;
-        private readonly int b;
+namespace DesignPatterns.Original
+{
+    class Color
+    {
+        private static readonly Dictionary<int, Color> Cache = new Dictionary<int, Color>();
 
-
-        // privatni konstruktor
-        private Color(int pR, int pG, int pB) {
-            this.r = pR;
-            this.g = pG;
-            this.b = pB;
+        /// <summary>
+        /// Private constructor
+        /// </summary>
+        private Color(int r, int g, int b)
+        {
+            R = r;
+            G = g;
+            B = b;
         }
 
+        public int R { get; }
+        public int G { get; }
+        public int B { get; }
 
-        public static Color Get(int pR, int pG, int pB) {
-            if (pR < 0 || pR > 255 || pG < 0 || pG > 255 || pB < 0 || pB > 255) {
+        public static Color Get(int r, int g, int b)
+        {
+            if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255)
                 throw new ArgumentException();
-            }
 
-            // generovani klice
-            int key = pR + (pG * 1000) + (pB * 100000);
-            
-            if (!cache.ContainsKey(key)) {
-                Color.cache.Add(key, new Color(pR, pG, pB));
-            }
+            // Key generation.
+            var key = r + (g * 1000) + (b * 100000);
 
-            Color c;
-            cache.TryGetValue(key, out c);
+            Cache.Add(key, new Color(r, g, b));
+            Cache.TryGetValue(key, out var c);
 
             return c;
-        }
-
-        public int GetR() {
-            return this.r;
-        }
-        public int GetG() {
-            return this.g;
-        }
-        public int GetB() {
-            return this.b;
         }
     }
 }

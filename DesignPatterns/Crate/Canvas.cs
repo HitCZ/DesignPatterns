@@ -11,12 +11,12 @@ namespace DesignPatterns.Crate {
         public void DrawPoint(int x, int y) { }
 
         public class Point {
-            public readonly int x;
-            public readonly int y;
+            public readonly int X;
+            public readonly int Y;
 
             public Point(int x, int y) {
-                this.x = x;
-                this.y = y;
+                X = x;
+                Y = y;
             }
         }
     }
