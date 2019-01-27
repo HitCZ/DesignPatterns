@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Singleton
 {
     public class Singleton
     {
-        private Singleton instance;
+        private static Singleton _instance;
         private readonly string myName;
 
         private Singleton()
@@ -16,7 +12,7 @@ namespace DesignPatterns.Singleton
             myName = "Heisenberg";
         }
 
-        public Singleton Instance => instance ?? (instance = new Singleton());
+        public static Singleton Instance => _instance ?? (_instance = new Singleton());
 
         public void SayMyName()
         {

@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Servant {
+﻿namespace DesignPatterns.Servant
+{
     class Main {
         public static void main(string[] args) {
-            Triangle t = new Triangle();
-            Ellipse e = new Ellipse();
+            var triangle = new Triangle();
+            var ellipse = new Ellipse();
+            var servant = new MoveServant();
 
-            MoveServant servant = new MoveServant();
-            servant.MoveBy(t, 5, 5);
-            servant.MoveBy(e, 50, 5);
+            servant.MoveBy(triangle, 5, 5);
+            servant.MoveBy(ellipse, 50, 5);
 
         }
     }

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace DesignPatterns.Library_Class {
     class MainClass {
         static void Main(string[] args) {
-            Console.WriteLine(LibraryClass.Add(5, 2));
-            Console.WriteLine(LibraryClass.Power(5));
+            Console.WriteLine(MathLibraryClass.Add(5, 2));
+            Console.WriteLine(MathLibraryClass.Power(5));
         }
     }
 }

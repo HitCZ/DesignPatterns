@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DesignPatterns.NullObject {
+namespace DesignPatterns.NullObject
+{
     class MainClass {
         public static void Main(string[] args) {
-            AbstractCustomer cust1 = CustomerFactory.GetCustomer("Rob");
-            AbstractCustomer cust2 = CustomerFactory.GetCustomer("Bob");
-            AbstractCustomer cust3 = CustomerFactory.GetCustomer("Julie");
-            AbstractCustomer cust4 = CustomerFactory.GetCustomer("Laura");
+            var cust1 = CustomerFactory.GetCustomer("Rob");
+            var cust2 = CustomerFactory.GetCustomer("Bob");
+            var cust3 = CustomerFactory.GetCustomer("Julie");
+            var cust4 = CustomerFactory.GetCustomer("Laura");
 
-            Console.WriteLine("Zakaznici: ");
-            Console.WriteLine(cust1.GetName());
-            Console.WriteLine(cust2.GetName());
-            Console.WriteLine(cust3.GetName());
-            Console.WriteLine(cust4.GetName());
+            Console.WriteLine("Customers: ");
+            Console.WriteLine(cust1.Name);
+            Console.WriteLine(cust2.Name);
+            Console.WriteLine(cust3.Name);
+            Console.WriteLine(cust4.Name);
         }
     }
 }

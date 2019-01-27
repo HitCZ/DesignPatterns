@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Messenger;
 
-namespace DesignPatterns.Servant {
+namespace DesignPatterns.Servant
+{
     class MoveServant {
-        public void MoveTo(IMovable serviced, Position where) {
-            serviced.SetPosition(where);
-        }
+        public void MoveTo(IMovable serviced, Position destination) => serviced.Position = destination;
 
-        public void MoveBy(IMovable serviced, int dx, int dy) {
-            dx += serviced.GetPosition().xPosition;
-            dy += serviced.GetPosition().yPosition;
+        public void MoveBy(IMovable serviced, double dx, double dy) {
+            dx += serviced.Position.X;
+            dy += serviced.Position.Y;
 
-            serviced.SetPosition(new Position(dx, dy));
+            serviced.Position = new Position(dx, dy);
         }
     }
 }

@@ -46,10 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Crate\Canvas.cs" />
+    <Compile Include="Factory\ActionGuy.cs" />
+    <Compile Include="Factory\LazyGuy.cs" />
     <Compile Include="ImmutableObject\Person.cs" />
-    <Compile Include="Library Class\LibraryClass.cs" />
+    <Compile Include="Library Class\MathLibraryClass.cs" />
     <Compile Include="Library Class\MainClass.cs" />
+    <Compile Include="Messenger\Position.cs" />
+    <Compile Include="Messenger\Shape.cs" />
     <Compile Include="NullObject\AbstractCustomer.cs" />
     <Compile Include="NullObject\CustomerFactory.cs" />
     <Compile Include="NullObject\MainClass.cs" />
@@ -60,9 +63,8 @@
     <Compile Include="Servant\IMovable.cs" />
     <Compile Include="Servant\Main.cs" />
     <Compile Include="Servant\MoveServant.cs" />
-    <Compile Include="Servant\Position.cs" />
     <Compile Include="Servant\Triangle.cs" />
-    <Compile Include="SimpleFactoryMethod\Person.cs" />
+    <Compile Include="Factory\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\Singleton.cs" />
