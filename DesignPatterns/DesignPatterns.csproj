@@ -58,6 +58,9 @@
     <Compile Include="NullObject\MainClass.cs" />
     <Compile Include="NullObject\NullCustomer.cs" />
     <Compile Include="NullObject\RealCustomer.cs" />
+    <Compile Include="ObjectPool\IFactory.cs" />
+    <Compile Include="ObjectPool\IPool.cs" />
+    <Compile Include="ObjectPool\Pool.cs" />
     <Compile Include="Original\Color.cs" />
     <Compile Include="Servant\Ellipse.cs" />
     <Compile Include="Servant\IMovable.cs" />
@@ -72,6 +75,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
