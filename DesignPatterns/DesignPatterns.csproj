@@ -38,6 +38,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,9 +50,12 @@
   <ItemGroup>
     <Compile Include="Factory\ActionGuy.cs" />
     <Compile Include="Factory\LazyGuy.cs" />
+    <Compile Include="FlyWeight\Circle.cs" />
+    <Compile Include="FlyWeight\Demo.cs" />
+    <Compile Include="FlyWeight\IShape.cs" />
+    <Compile Include="FlyWeight\ShapeFactory.cs" />
     <Compile Include="ImmutableObject\Person.cs" />
     <Compile Include="Library Class\MathLibraryClass.cs" />
-    <Compile Include="Library Class\MainClass.cs" />
     <Compile Include="Messenger\Position.cs" />
     <Compile Include="Messenger\Shape.cs" />
     <Compile Include="NullObject\AbstractCustomer.cs" />
@@ -58,13 +63,12 @@
     <Compile Include="NullObject\MainClass.cs" />
     <Compile Include="NullObject\NullCustomer.cs" />
     <Compile Include="NullObject\RealCustomer.cs" />
-    <Compile Include="ObjectPool\IFactory.cs" />
-    <Compile Include="ObjectPool\IPool.cs" />
-    <Compile Include="ObjectPool\Pool.cs" />
+    <Compile Include="ObjectPool\Connection.cs" />
+    <Compile Include="ObjectPool\Demo.cs" />
+    <Compile Include="ObjectPool\ObjectPool.cs" />
     <Compile Include="Original\Color.cs" />
     <Compile Include="Servant\Ellipse.cs" />
     <Compile Include="Servant\IMovable.cs" />
-    <Compile Include="Servant\Main.cs" />
     <Compile Include="Servant\MoveServant.cs" />
     <Compile Include="Servant\Triangle.cs" />
     <Compile Include="Factory\Person.cs" />

@@ -10,12 +10,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns {
     class Program {
-        static void Main(string[] args) {
-            Color blue1 = Color.Get(0, 0, 255);
-            Color red1 = Color.Get(255, 0, 0);
-            Color blue2 = Color.Get(0, 0, 255);
+        static void Main(string[] args)
+        {
+            var demo = new FlyWeight.Demo();
+            demo.Run();
 
-            Console.WriteLine(blue1);
             Console.Read();
         }
     }
