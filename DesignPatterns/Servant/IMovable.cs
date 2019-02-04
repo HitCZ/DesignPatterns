@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Messenger;
 
-namespace DesignPatterns.Servant {
+namespace DesignPatterns.Servant
+{
     interface IMovable {
-        void SetPosition(Position p);
-        Position GetPosition();
+        Position Position { get; set; }
     }
 }

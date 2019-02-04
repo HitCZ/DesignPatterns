@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Messenger;
 
-namespace DesignPatterns.Servant {
+namespace DesignPatterns.Servant
+{
     class Ellipse : IMovable {
-        private Position p;
-
-        public Position GetPosition() {
-            return this.p;
-        }
-
-        public void SetPosition(Position p) {
-            this.p = p;
-        }
+        public Position Position { get; set; }
     }
 }
