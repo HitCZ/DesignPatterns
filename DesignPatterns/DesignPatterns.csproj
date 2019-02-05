@@ -48,6 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract Factory\Enums\ShapeType.cs" />
+    <Compile Include="Abstract Factory\Factories\AbstractFactory.cs" />
+    <Compile Include="Abstract Factory\Factories\RoundedShapeFactory.cs" />
+    <Compile Include="Abstract Factory\Factories\ShapeFactory.cs" />
+    <Compile Include="Abstract Factory\FactoryProducer.cs" />
+    <Compile Include="Abstract Factory\Shapes\IShape.cs" />
+    <Compile Include="Abstract Factory\Shapes\Rectangle.cs" />
+    <Compile Include="Abstract Factory\Shapes\RoundedRectangle.cs" />
+    <Compile Include="Abstract Factory\Shapes\RoundedSquare.cs" />
     <Compile Include="Factory\ActionGuy.cs" />
     <Compile Include="Factory\LazyGuy.cs" />
     <Compile Include="FlyWeight\Circle.cs" />
