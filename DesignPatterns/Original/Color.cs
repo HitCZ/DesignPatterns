@@ -29,10 +29,17 @@ namespace DesignPatterns.Original
             // Key generation.
             var key = r + (g * 1000) + (b * 100000);
 
-            Cache.Add(key, new Color(r, g, b));
-            Cache.TryGetValue(key, out var c);
+            Color color;
 
-            return c;
+            if (!Cache.ContainsKey(key))
+            {
+                color = new Color(r, g, b);
+                Cache.Add(key, color);
+            }
+            else
+                color = Cache[key];
+
+            return color;
         }
     }
 }

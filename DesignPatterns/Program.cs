@@ -12,8 +12,11 @@ namespace DesignPatterns {
     class Program {
         static void Main(string[] args)
         {
-            var demo = new FlyWeight.Demo();
-            demo.Run();
+            var red = 2;
+            var green = 3;
+            var blue = 4;
+            var color = Color.Get(red, green, blue);
+            var color2 = Color.Get(red, green, blue);
 
             Console.Read();
         }

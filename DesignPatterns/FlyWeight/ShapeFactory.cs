@@ -8,8 +8,7 @@ namespace DesignPatterns.FlyWeight
 {
     class ShapeFactory
     {
-        private static readonly Dictionary<string, IShape> cache 
-            = new Dictionary<string, IShape>();
+        private static readonly Dictionary<string, IShape> cache = new Dictionary<string, IShape>();
 
         public static IShape GetCircle(string color)
         {

@@ -57,6 +57,14 @@
     <Compile Include="Abstract Factory\Shapes\Rectangle.cs" />
     <Compile Include="Abstract Factory\Shapes\RoundedRectangle.cs" />
     <Compile Include="Abstract Factory\Shapes\RoundedSquare.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\IDevice.cs" />
+    <Compile Include="Command\IDeviceCommand.cs" />
+    <Compile Include="Command\Television.cs" />
+    <Compile Include="Command\TurnOffCommand.cs" />
+    <Compile Include="Command\TurnOnCommand.cs" />
+    <Compile Include="Command\VolumeDownCommand.cs" />
+    <Compile Include="Command\VolumeUpCommand.cs" />
     <Compile Include="Factory\ActionGuy.cs" />
     <Compile Include="Factory\LazyGuy.cs" />
     <Compile Include="FlyWeight\Circle.cs" />
