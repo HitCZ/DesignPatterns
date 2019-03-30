@@ -91,6 +91,7 @@
     <Compile Include="ObjectPool\Demo.cs" />
     <Compile Include="ObjectPool\ObjectPool.cs" />
     <Compile Include="Original\Color.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="RelayCommand\RelayCommand.cs" />
     <Compile Include="Servant\Ellipse.cs" />
     <Compile Include="Servant\IMovable.cs" />
@@ -100,6 +101,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="State\DeadState.cs" />
+    <Compile Include="State\Enemy.cs" />
+    <Compile Include="State\FullHealthState.cs" />
+    <Compile Include="State\HurtState.cs" />
+    <Compile Include="State\IState.cs" />
+    <Compile Include="State\Player.cs" />
+    <Compile Include="State\StateDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
