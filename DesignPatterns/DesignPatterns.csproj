@@ -36,6 +36,7 @@
     <StartupObject>DesignPatterns.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -84,6 +85,7 @@
     <Compile Include="ObjectPool\Demo.cs" />
     <Compile Include="ObjectPool\ObjectPool.cs" />
     <Compile Include="Original\Color.cs" />
+    <Compile Include="RelayCommand\RelayCommand.cs" />
     <Compile Include="Servant\Ellipse.cs" />
     <Compile Include="Servant\IMovable.cs" />
     <Compile Include="Servant\MoveServant.cs" />

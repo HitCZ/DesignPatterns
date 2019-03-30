@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Library_Class;
 using DesignPatterns.NullObject;
 using DesignPatterns.Original;
+using DesignPatterns.RelayCommand;
 using DesignPatterns.Singleton;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,14 @@ namespace DesignPatterns {
             var color = Color.Get(red, green, blue);
             var color2 = Color.Get(red, green, blue);
 
+            var cmd = new RelayCommand<int>(cmdExecute);
+
             Console.Read();
+        }
+
+        static void cmdExecute(int value)
+        {
+
         }
     }
 }
