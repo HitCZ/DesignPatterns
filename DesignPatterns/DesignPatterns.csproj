@@ -73,6 +73,12 @@
     <Compile Include="FlyWeight\IShape.cs" />
     <Compile Include="FlyWeight\ShapeFactory.cs" />
     <Compile Include="ImmutableObject\Person.cs" />
+    <Compile Include="Iterator\Demo.cs" />
+    <Compile Include="Iterator\ICandyCollection.cs" />
+    <Compile Include="Iterator\IJellyBeanIterator.cs" />
+    <Compile Include="Iterator\JellyBeanCollection.cs" />
+    <Compile Include="Iterator\JellyBean.cs" />
+    <Compile Include="Iterator\JellyBeanIterator.cs" />
     <Compile Include="Library Class\MathLibraryClass.cs" />
     <Compile Include="Messenger\Position.cs" />
     <Compile Include="Messenger\Shape.cs" />
