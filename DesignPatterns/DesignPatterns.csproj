@@ -108,6 +108,9 @@
     <Compile Include="State\IState.cs" />
     <Compile Include="State\Player.cs" />
     <Compile Include="State\StateDemo.cs" />
+    <Compile Include="TemplateMethod\Cricket.cs" />
+    <Compile Include="TemplateMethod\Football.cs" />
+    <Compile Include="TemplateMethod\Game.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
