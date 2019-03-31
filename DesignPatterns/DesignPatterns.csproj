@@ -66,6 +66,10 @@
     <Compile Include="Command\TurnOnCommand.cs" />
     <Compile Include="Command\VolumeDownCommand.cs" />
     <Compile Include="Command\VolumeUpCommand.cs" />
+    <Compile Include="Facade\ComputerFacade.cs" />
+    <Compile Include="Facade\CPU.cs" />
+    <Compile Include="Facade\HardDrive.cs" />
+    <Compile Include="Facade\Memory.cs" />
     <Compile Include="Factory\ActionGuy.cs" />
     <Compile Include="Factory\LazyGuy.cs" />
     <Compile Include="FlyWeight\Circle.cs" />
