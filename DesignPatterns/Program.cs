@@ -1,5 +1,5 @@
-﻿using System;
-using DesignPatterns.State;
+﻿using DesignPatterns.Strategy;
+using System;
 
 namespace DesignPatterns
 {
@@ -7,7 +7,9 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             //var iteratorDemo = new Demo();
-            var stateDemo = new StateDemo();
+            //var stateDemo = new StateDemo();
+            //var decoratorDemo = new DecoratorDemo();
+            StrategyDemo.Run();
 
             Console.Read();
         }
