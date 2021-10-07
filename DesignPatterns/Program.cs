@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Strategy;
+﻿using DesignPatterns.Composite;
 using System;
 
 namespace DesignPatterns
@@ -6,11 +6,7 @@ namespace DesignPatterns
     class Program {
         static void Main(string[] args)
         {
-            //var iteratorDemo = new Demo();
-            //var stateDemo = new StateDemo();
-            //var decoratorDemo = new DecoratorDemo();
-            StrategyDemo.Run();
-
+            new CompositeSample().Run();
             Console.Read();
         }
     }

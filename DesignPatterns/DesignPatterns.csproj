@@ -73,6 +73,10 @@
     <Compile Include="Command\TurnOnCommand.cs" />
     <Compile Include="Command\VolumeDownCommand.cs" />
     <Compile Include="Command\VolumeUpCommand.cs" />
+    <Compile Include="Composite\CompositeComponent.cs" />
+    <Compile Include="Composite\CompositeSample.cs" />
+    <Compile Include="Composite\FinalComponent.cs" />
+    <Compile Include="Composite\IComponent.cs" />
     <Compile Include="Decorator\CommentGroup.cs" />
     <Compile Include="Decorator\CommentsBackendProvider.cs" />
     <Compile Include="Decorator\CommentsBackendProviderEventPublishingDecorator.cs" />
@@ -89,6 +93,7 @@
     <Compile Include="FlyWeight\IShape.cs" />
     <Compile Include="FlyWeight\ShapeFactory.cs" />
     <Compile Include="ImmutableObject\Person.cs" />
+    <Compile Include="IPatternSample.cs" />
     <Compile Include="Iterator\Demo.cs" />
     <Compile Include="Iterator\ICandyCollection.cs" />
     <Compile Include="Iterator\IJellyBeanIterator.cs" />
@@ -106,6 +111,10 @@
     <Compile Include="ObjectPool\Connection.cs" />
     <Compile Include="ObjectPool\Demo.cs" />
     <Compile Include="ObjectPool\ObjectPool.cs" />
+    <Compile Include="Observer\ConcreteObserver.cs" />
+    <Compile Include="Observer\IObservable.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Observer\Subject.cs" />
     <Compile Include="Original\Color.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="RelayCommand\RelayCommand.cs" />
